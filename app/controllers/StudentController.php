@@ -41,10 +41,10 @@ class StudentController extends BaseController {
 		$postedit = Input::all();
 		$id 			= $postedit['id'];
 		$data			= DB::table('student')->where('id',$id)->first();
-
-		header("Content-type :text/x-json");
-		echo json_encode($data);
+		header("Content-type:text/x-json");
+		echo json_encode($rows);
 		exit();
+		
 	}
 
 	public function display()

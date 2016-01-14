@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'ajax',
+			'database'  => 'producto',
 			'username'  => 'root',
 			'password'  => 'base.123',
 			'charset'   => 'utf8',
