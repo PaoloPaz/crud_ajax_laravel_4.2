@@ -29,9 +29,10 @@
   <a href="<?=URL::to('/Orderindex')?>">Regresar</a>
 	<!-- form start -->
 
-	            <form class="form-horizontal" action="<?=URL::to('/ordersave') ?>" method="post">
+	            <form class="form-horizontal" action="<?=URL::to('/orderupdate') ?>" method="post">
 	              <div class="box-body">
-	                <div class="form-group"><input type="midden" value="<?= $row->id?>" name="id"/>
+									<input type="midden" value="<?= $row->id?>" name="id"/>
+	                <div class="form-group">
 	                  <label for="inputEmail3" class="col-sm-2 control-label">Order_name</label>
 
 	                  <div class="col-sm-4">
@@ -82,10 +83,10 @@
                       <tr class="tr">
                         <td>1</td>
                         <td><input type="text" value="<?= $rd->product_id?>"  class="form-control" name="product_id[]" placeholder=""></td>
-                        <td><input type="text" value="<?= $rd->product_name?>" class="form-control" name="product_name" placeholder=""></td>
-                        <td><input type="text" value="<?= $rd->quantity?>" class="form-control" name="quantity" placeholder=""></td>
-                        <td><input type="text" value="<?= $rd->price?>" class="form-control" name="price" placeholder=""></td>
-                        <td><input type="text" value="<?= $rd->amount?>" class="form-control" name="amount" placeholder=""></td>
+                        <td><input type="text" value="<?= $rd->product_name?>" class="form-control" name="product_name[]" placeholder=""></td>
+                        <td><input type="text" value="<?= $rd->quantity?>" class="form-control" name="quantity[]" placeholder=""></td>
+                        <td><input type="text" value="<?= $rd->price?>" class="form-control" name="price[]" placeholder=""></td>
+                        <td><input type="text" value="<?= $rd->amount?>" class="form-control" name="amount[]" placeholder=""></td>
                         <td><a href="#" class="delete">Borrar </a></td>
                       </tr>
 

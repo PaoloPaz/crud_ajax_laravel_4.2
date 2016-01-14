@@ -73,10 +73,10 @@
                   <tr class="tr">
                     <td>1</td>
                     <td><input type="text" class="form-control" name="product_id[]" placeholder=""></td>
-                    <td><input type="text" class="form-control" name="product_name" placeholder=""></td>
-                    <td><input type="text" class="form-control" name="quantity" placeholder=""></td>
-                    <td><input type="text" class="form-control" name="price" placeholder=""></td>
-                    <td><input type="text" class="form-control" name="amount" placeholder=""></td>
+                    <td><input type="text" class="form-control" name="product_name[]" placeholder=""></td>
+                    <td><input type="text" class="form-control" name="quantity[]" placeholder=""></td>
+                    <td><input type="text" class="form-control" name="price[]" placeholder=""></td>
+                    <td><input type="text" class="form-control" name="amount[]" placeholder=""></td>
                     <td><a href="#" class="delete">Borrar </a></td>
                   </tr>
                 </tbody>
@@ -101,7 +101,7 @@
           '<td><a href="#" class="delete">Borrar </a></td>'+
       '</tr>';
       $('.tbody').append(tr);
-			console.log("holaaaa")
+
 		});
 		$( document ).on( "click", ".delete", function() {
 

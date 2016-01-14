@@ -30,6 +30,7 @@ Route::get('/Orderform','OrderController@form');
 Route::post('/ordersave','OrderController@save');
 Route::get('/DeleteRow/{id}','OrderController@delete');
 Route::get('/EditRow/{id}','OrderController@edit');
+Route::post('/orderupdate','OrderController@update');
 //amount --- cantidad
 //quantity     ----
 //price precio
