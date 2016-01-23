@@ -20,7 +20,7 @@
 <p style="color:red;">{{$errors->first('address')}}</p>
 <body>
 	<h1>Registrar</h1>
-  <a href="<?=URL::to('/Orderindex')?>">Regresar</a>
+  <a href="<?=URL::to('/')?>">Regresar</a>
 	<!-- form start -->
 
 	            <form class="form-horizontal" action="<?=URL::to('/ordersave') ?>" method="post">
