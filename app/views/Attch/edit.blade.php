@@ -44,7 +44,7 @@
 
             </div>
             <div class="col-sm-5">
-              <a href="/brand">Rgresar</a>
+              <a href="{{Route('get.brand')}}">Rgresar</a>
 
 
             </div>
